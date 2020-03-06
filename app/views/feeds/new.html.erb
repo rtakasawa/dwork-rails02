@@ -1,0 +1,7 @@
+<h1>New Feed</h1>
+
+<!--renderはオプションの機能で、そのページが持っている変数を
+  別の変数に渡して、render先のページに持って行くことができます。-->
+<%= render 'form', feed: @feed %>
+
+<%= link_to 'Back', feeds_path %>
