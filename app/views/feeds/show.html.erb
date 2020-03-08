@@ -1,11 +1,8 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Image:</strong>
-  <!-- imageカラムに画像のパスが入っている。カラム名に
-    urlをつけると、画像が画面に表示される-->
   <%= image_tag @feed.image.url %>
+  本文：<%= @feed.writing %>
 </p>
-
 <%= link_to 'Edit', edit_feed_path(@feed) %> |
 <%= link_to 'Back', feeds_path %>

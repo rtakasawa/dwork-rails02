@@ -19,6 +19,7 @@ class FeedsController < ApplicationController
   end
   def create
     @feed = Feed.new(feed_params)
+    @feed.user_id = current_user.id
     respond_to do |format|
       if @feed.save
         format.html { redirect_to @feed, notice: 'Feed was successfully created.' }
@@ -48,10 +49,10 @@ class FeedsController < ApplicationController
     end
   end
   private
-    def set_feed
-      @feed = Feed.find(params[:id])
-    end
-    def feed_params
-      params.require(:feed).permit(:image, :image_cache)
-    end
+  def set_feed
+    @feed = Feed.find(params[:id])
+  end
+  def feed_params
+    params.require(:feed).permit(:image, :image_cache, :writing)
+  end
 end
