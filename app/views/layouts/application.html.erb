@@ -4,12 +4,17 @@
     <title>DworkRails02</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <header>
+    <p>Facebook_Clone</p>
+  </header>
     <%= yield %>
+  <footer>
+    <p>運営会社hogehoge</p>
+  </footer>
   </body>
 </html>

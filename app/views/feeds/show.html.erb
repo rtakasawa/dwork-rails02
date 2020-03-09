@@ -1,10 +1,21 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <strong>Image:</strong>
-  <% unless @feed.image.blank? %>
-   <%= image_tag @feed.image.url %>
-  <% end %>
-  本文：<%= @feed.writing %>
-</p>
+<table>
+  <thead>
+  <tr>
+    <th><strong>Image:</strong></th>
+    <th><strong>Writing:</strong></th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><% unless @feed.image.blank? %>
+          <%= image_tag @feed.image.url %>
+        <% end %>
+      </td>
+      <td><%= @feed.writing %></td>
+    </tr>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_feed_path(@feed) %> |
 <%= link_to 'Back', feeds_path %>

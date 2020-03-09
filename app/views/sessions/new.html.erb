@@ -1,7 +1,9 @@
 <% flash.each do |key, value| %>
   <%= content_tag(:div, value, class: "#{key}") %>
 <% end %>
-<%= link_to "Sign up", new_user_path %>
+<p class="btn01">
+<%= link_to("Sign up", new_user_path)%>
+</p>
 <h1>Log in</h1>
 <!-- sessionはリソース名。routes.rbのsessionもリソース名。session_pathに情報を送信している。-->
 <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>

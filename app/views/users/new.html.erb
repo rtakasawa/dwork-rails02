@@ -1,3 +1,6 @@
+<p class="btn01">
+  <%= link_to("Log in", new_session_path)%>
+</p>
 <h1>Sign up</h1>
 <%= form_with(model: @user, local: true) do |f| %>
   <% if @user.errors.any? %>

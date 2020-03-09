@@ -1,3 +1,19 @@
 // Place all the styles related to the feeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  width: auto;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: solid 1px black;
+}
+table th {
+  background-color: lightcyan;
+  padding: 20px;
+}
+
+table td {
+  padding: 20px;
+}

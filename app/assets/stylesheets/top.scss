@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  position: relative;
+  background-color: dodgerblue;
+  height: 60px;
+  margin-bottom: 30px;
+}
+header p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100px;
+  text-align: center;
+  color: #EFEFEF;
+  font-size: medium;
+  font-family: arial black;
+}
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #2E2F30;
+  height: 60px;
+  margin-top: 30px;
+}
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100px;
+  text-align: center;
+  color: #EFEFEF;
+  font-size: medium;
+  font-family: arial black;
+}
