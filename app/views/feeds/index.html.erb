@@ -23,6 +23,8 @@
         <td><%= feed.user.name %></td>
         <% unless feed.image.blank? %>
           <td><%= image_tag feed.image.url %></td>
+          <% else %>
+          <td><%= "" %></td>
         <% end %>
         <td><%= feed.writing %></td>
         <td><%= link_to 'Show', feed %></td>

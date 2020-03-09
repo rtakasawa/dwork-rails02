@@ -1,3 +1,9 @@
+<% if @feed.errors.any? %>
+  <div id="error_explanation">
+  <strong>Please enter one</strong>
+  </div>
+<% end %>
+
 <h1>New Feed</h1>
 
 <!--renderはオプションの機能で、そのページが持っている変数を
