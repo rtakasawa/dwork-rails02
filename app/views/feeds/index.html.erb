@@ -17,7 +17,9 @@
     <% @feeds.each do |feed| %>
       <tr>
         <td><%= feed.user.name %></td>
-        <td><%= image_tag feed.image.url %></td>
+        <% unless feed.image.blank? %>
+          <td><%= image_tag feed.image.url %></td>
+        <% end %>
         <td><%= feed.writing %></td>
         <td><%= link_to 'Show', feed %></td>
         <td><%= link_to 'Edit', edit_feed_path(feed) %></td>

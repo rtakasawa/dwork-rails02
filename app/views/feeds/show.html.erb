@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 <p>
   <strong>Image:</strong>
-  <%= image_tag @feed.image.url %>
+  <% unless @feed.image.blank? %>
+   <%= image_tag @feed.image.url %>
+  <% end %>
   本文：<%= @feed.writing %>
 </p>
 <%= link_to 'Edit', edit_feed_path(@feed) %> |
