@@ -9,10 +9,12 @@
 <table>
   <thead>
     <tr>
-      <th>User</th>
-      <th>Image</th>
-      <th>Writing</th>
-      <th colspan="3">Corresponding button</th>
+      <% unless @feeds.blank? %>
+        <th>User</th>
+        <th>Image</th>
+        <th>Writing</th>
+        <th colspan="3">Corresponding button</th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
